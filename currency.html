@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="application/json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/hamburgernav.css">
+    <link rel="stylesheet" href="CSS/currency.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" id="logo"><span>RANDOM </span>GENERATOR</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="factsmain.html" ><=BACK</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <!-- <li><a id="hov" href="#logout">LOGOUT</a></li> -->
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo" id="logo"><span>RANDOM </span>GENERATOR</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="factsmain.html" onclick="toggleMenu()"><=BACK</a></li>
+            <li><a href="about.html" onclick="toggleMenu()">ABOUT</a></li>
+            <!-- <li><a id="hov" href="#logout" onclick="toggleMenu()">LOGOUT</a></li> -->
+          </div>
+        </div>
+      </nav> 
+
+    <div id="container">
+        <div>
+            <h2>Currency Converter</h2>
+        </div>
+        <div id="inputs">
+            <input type ="text" id="searchbox1" placeholder="Old Currency">
+            <input type ="text" id="searchbox2" placeholder="New Currency">
+            <input type ="text" id="searchbox3" placeholder="Old Amount">
+            <button type="submit" id="search">Generate</button>
+        </div>
+        <div id="result">
+        </div>
+    </div> 
+ <script src="javascript/script.js"></script>
+ <script src="javascript/currency.js"></script> 
+</body>
+</html>

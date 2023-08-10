@@ -1,0 +1,47 @@
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#footer .linktitle{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+.linktitle:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.4rem;
+}
+#socials-container{
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+#flink{
+    margin:auto 4rem;
+}
+#flink:hover{
+    border-left-style:outset ;
+    border-width: 0.2rem;
+    border-color: black;
+    padding: 0.7rem;
+}
+@media screen and (max-width:500px) {
+    #flink{
+        margin: auto 1rem;
+    }
+    hr{
+        margin: auto;
+        width :100%;
+    }
+}
+@media screen and (max-width:656.5px) {
+    #flink{
+        margin: auto 1rem;
+    }
+}
+@media screen and (max-width:272.5px) {
+    #flink{
+        margin: auto 0.3rem;
+    }
+}

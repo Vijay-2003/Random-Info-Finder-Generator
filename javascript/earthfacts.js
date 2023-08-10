@@ -1,0 +1,48 @@
+    let fact3text = document.getElementById("fact3text")
+    let fact3btn = document.getElementById("fact3btn")
+    let earthfact = [
+    'There are millions of meteors in the Earths atmosphere every day.',   
+    'Earth is the only planet not named after a God.',
+    'There is a possibility that some asteroid/comet may hit earth and cause devastation to life. A similar event 65 million years ago happened and wiped out the dinosaurs from the planet.',
+    'Scientists have recently estimated that an ocean of water exists at a distance of 1,000 km under the surface of the Earth. And this water is important for volcanic activity, which in turn is responsible for generating soil.',   
+    'Earth is the third planet from the Sun and is the largest of the four terrestrial planets namely Mercury, Venus, Earth, and Mars (Order of the planets from the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, and Pluto (the dwarf planet)).',
+    'The existence of water in the liquid phase on Earth is due to the temperature span that exists on the Earth: 0 - 100 degree Celsius. Water boils at 100 degree Celsius, thus converting it into gas and making it unusable for consumption by living beings including humans, animals, and birds, etc.',
+    'Earth is the only place in the solar system where water can be present in all the three states - solid, liquid and gas.',
+    'We are all traveling around the Sun at an average velocity of 107,182 kilometers per hour. And at the same time, we are also spinning with an enormous speed - that could be 1000 miles per hour depending on your position on Earth.',
+    'Earth receives between 100 and 300 metric ton of cosmic dust everyday',
+    'Despite the fact that the earth is made up of more than 70% of water, do not be surprised to learn that water accounts for less than 1% of Earths mass.',
+    'In size, Earth is slightly larger than Venus.',
+    'Earth formed some 4.54 billion years ago.',
+    'It is estimated that life came to existence on Earth some 4.1 billion years ago.',
+    'It is interesting to note that more than 95% of Earths ocean are still unexplored.',
+    'The force of gravity in the Hudson Bay region of Canada is less than that on the rest of the planet. There are various theories that scientists associate with this effect but no one is sure as to why this is the case.',
+    'Earth has just one moon whereas Jupiter has 67 moons.',
+    'Moon is Earths only permanent natural satellite. (FYI - there are 181 known natural moons that are orbiting the full-size and dwarf planets in our solar system)',
+    'Tides in oceans on Earth happen due to the force of gravitation between the Earth and the moon. Moon pulls up water in oceans and even in lakes, due to its gravitational force.',
+    'It is a fascinating fact to note here that 99% of all species that ever existed on the Earth are now extinct.',
+    'Earth is the only known planet that supports life. However, attempts are underway to help life survive on other planets like Mars.',
+    'The speed of rotation of Earth is gradually slowing down; meaning that in some 140 million years from now, the length of a day on Earth would be 25 hours.',
+    'Because of the presence of inner Nickel-Iron core, Earth has a strong magnetic field. This magnetic field is also responsible for preventing heavy solar winds from blowing on the Earth and causing damage to various life forms.',
+    'Earths inner core has a temperature between 5400 and 6000 degrees Celsius. Thus, making it hotter than the surface of the Sun (surface temperature - 5500 Celsius).',
+    'The thickest of all the four layers of the earth is the mantle, which is 2900 kilometers thick. This layer has a consistency of caramel and is composed of a hot mixture of molten rock.',
+    'The thinnest of all the layers is the crust, which is on an average 30 kilometers deep on an average on the ground. ',
+    'Earths core is almost 85-88% iron and its crust is almost 47% Oxygen.',
+    'Earth is the only planet in the solar system that has tectonic plates underneath its surface. These plates are floating on top of the magma inside of the Earth. When these plates collide, earthquakes happen. Movement of these plates is also very important for other geological and life-supporting purposes.',
+    'The Earth also has the credit of being the densest planet in the Solar System. It has an average density of 5.51 grams per cubic centimeter.',
+    'There are five layers in Earths atmosphere including - the Troposphere, the Stratosphere, the Mesosphere, the Thermosphere, and the Exosphere.',
+    'Earths atmosphere is the thickest from ground level up to a height of 50 km and extends up to 10,000 km.',
+    'The first 11 km from the Earths surface has 75% of the atmosphere.',
+    'Did you ever wonder why we have a leap year every four years? This is because a year on earth is not exactly 365 days but it is 365.2564 days. This extra 0.2564 day is adjusted with an extra day (leap day) in the month of February every four years.',
+    'Earth is composed of four main layers - inner core, outer core, mantle, and crust.',
+    'Earth is the fifth largest planet in terms of size and mass.',
+    'Earth has an Ozone layer which protects it from Suns powerful and harmful UV rays.',
+    'The peak of Ecuadors Mount Chimborazo, located just one degree south of the Equator is the highest point on Earth. At this point, the Earths bulge is greatest.',
+    '“Challenger deep” - near a trench called the “Mariana Trench” beneath the surface of the Pacific Ocean to the southeast of Japan — is the deepest known place on Earth. This trench is nearly seven miles deep.',
+    'The highest recorded temperature: it is 56.7°C (134°F), measured on 10 July 1913 at Greenland Ranch, Death Valley, California, USA.',
+    'Mawsynram in Meghalaya, India is the wettest place on land on Earth.',
+    'The boundary between Earths atmosphere and outer space is known as the Karman Line.',
+];
+fact3btn.addEventListener("click", function fact3f(){
+    let randomearthfact = earthfact[Math.floor(Math.random() * earthfact.length)]
+    fact3text.innerText = randomearthfact;
+})

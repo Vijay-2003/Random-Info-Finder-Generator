@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facts Home</title>
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/hamburgernav.css">
+    <link rel="stylesheet" href="CSS/factsmenu.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+    <div class="logo" id="logo"><span>RANDOM </span>GENERATOR</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="factsmain.html">RANDOM GENERATOR</a></li>
+        <li><a href="#footer">CONTACT</a></li>
+        <!-- <li><a id="hov" href="#logout">LOGOUT</a></li> -->
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo" id="logo"><span>RANDOM </span>GENERATOR</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="about.html" onclick="toggleMenu()">ABOUT</a></li>
+        <li><a href="factsmain.html" onclick="toggleMenu()">RANDOM GENERATOR</a></li>
+        <li><a href="#footer" onclick="toggleMenu()">CONTACT</a></li>
+        <!-- <li><a id="hov" href="#logout" onclick="toggleMenu()">LOGOUT</a></li> -->
+      </div>
+    </div>
+  </nav>
+
+<!--section 1-->
+
+  <section id="factsmenu">
+    <div class="whatfacts">
+    <div class="factstitle" style="display: flex;flex-direction: row;justify-content: center;align-items: center;flex-wrap: wrap;text-align: center;">
+        <h2>What is Random Generator ?</h2>
+    </div>
+    <div class="factsinfo">
+        <p>A random generator is a device or a program that can produce one or many random numbers or items within a defined range or set. There are two main types of random generators: pseudo-random and true random. Pseudo-random generators use mathematical formulas to create random numbers, while true random generators use physical phenomena such as atmospheric noise or quantum events to create random numbers
+        </p>
+    </div>
+</div>
+<hr style="border-color: grey;width: 100%;">
+    <hr style="border-color: grey;width: 100%;">
+
+    <div class="whatphilosophy">
+    <div class="philosophy" style="display: flex;flex-direction: row;justify-content: center;align-items: center;flex-wrap: wrap;text-align: center;">
+        <h2>What is Random Facts Generator ?</h2>
+    </div>
+    <div class="philosophyinfo">
+        <p>A random fact generator is an online tool that generates a random fact or facts list randomly. These facts can be about any topic, such as history, science, geography, or pop culture.</p>
+    </div>
+    </div>
+
+    <hr style="border-color: grey;width: 100%;">
+    <hr style="border-color: grey;width: 100%;">
+
+    <div class="whatphilosophy">
+    <div class="philosophy" style="display: flex;flex-direction: row;justify-content: center;align-items: center;flex-wrap: wrap;text-align: center;">
+        <h2>What is Random Info Generator ?</h2>
+    </div>
+    <div class="philosophyinfo">
+        <p>allows you to generate online a table with random personal information: name, age, occupation, salary, etc. You can use this data table for education (e.g. teaching, learning MS Excel), for testing databases or for other purposes.</p>
+    </div>
+    </div>
+
+    <!-- section 2-->
+
+  </section>
+  <hr style="border-color: grey;width: 95%; margin: auto;">
+  <section id="footer">
+    <div class="linktitle">Social Links</div>
+    <div id="socials-container">
+        <a id="flink" href="https://www.linkedin.com/in/vijay-digambar-kusekar-682235259" target="window2">
+          <i class="fa-brands fa-linkedin" style="color: blue;"></i>
+      </a>
+      <a id="flink" href="https://github.com/Vijay-2003" target="window2">
+          <i class="fa-brands fa-github" style="color: #00060f;"></i>
+      </a>
+      <a id="flink" href="https://instagram.com/vijay_kusekar?igshid=MzNINGNkZWQ4Mg==" target="window2">
+          <i class="fa-brands fa-instagram" style="color: #c91891;"></i>
+      </a>
+      <a id="flink" href="https://www.facebook.com/profile.php?id=100069505254213" target="window2">
+          <i class="fa-brands fa-facebook" style="color: #0962fb;"></i>
+      </a>
+      </div>
+  </section>
+
+<!--footer-->
+<!-- <hr style="border-color: grey;width: 50%; margin: auto;"> -->
+  <footer id="footer">
+    <div>
+        <ul class="foot-links">
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a id="factleft" href="factsmain.html">INDEX</a></li>
+          <li><a id="disappear" href="#hamburger-nav">HOME</a></li>
+          <li><a id="appear" href="#desktop-nav">HOME</a></li>
+          <!-- <li><a id="hov" href="#logout">LOGOUT</a></li> -->
+        </ul>
+      </div>
+    <p>Copyright &#169; 2023 Vijay Kusekar. All Rights Reserved.</p>
+  </footer>
+  <style>
+     @media screen and (min-width:1201px) {
+        #disappear{
+            display: none;
+        }
+    }
+    @media screen and (max-width:358.5px) {
+        #disappear{
+            position: relative;
+            right: -1.5rem;
+        }
+        #factleft{
+            position: relative;
+            right: -1rem;
+        }
+    }
+  </style>
+      <script src="javascript/script.js"></script>
+      <script src="https://kit.fontawesome.com/6a7fb8c661.js" crossorigin="anonymous"></script>  
+</body>
+</html>

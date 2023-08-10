@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets Info</title>
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/hamburgernav.css">
+    <link rel="stylesheet" href="CSS/factsgenerate.css">
+    <link rel="stylesheet" href="CSS/planets.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" id="logo"><span>RANDOM </span>GENERATOR</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="factsmain.html" ><=BACK</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <!-- <li><a id="hov" href="#logout">LOGOUT</a></li> -->
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo" id="logo"><span>RANDOM </span>GENERATOR</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="factsmain.html" onclick="toggleMenu()"><=BACK</a></li>
+            <li><a href="about.html" onclick="toggleMenu()">ABOUT</a></li>
+            <!-- <li><a id="hov" href="#logout" onclick="toggleMenu()">LOGOUT</a></li> -->
+          </div>
+        </div>
+      </nav>
+
+    <div id="factbox">
+        <div class="facttitle">
+            <h2>Planets <span>Info</span></h2>
+        </div>
+        <div class="factgenerator">
+            <hr style="border-color: red; width: 70%;">
+            <h5 id="txt2">Mass : </h5>
+            <h5 id="txt3">Radius : </h5>
+            <h5 id="txt4">Temperature : </h5>
+            <h5 id="txt5">Period : </h5>
+            <h5 id="txt6">Distance Light Year : </h5>
+            <hr style="border-color: red; width: 70%;">
+        <div id="form1">
+            <form class="form">
+            <input type="text" id="find3" placeholder="Planet Name (Ex:Earth)"></input>
+            <button type="submit" id="search3">Search</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    <script src="javascript/script.js"></script>
+    <script src="javascript/planets.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+#find{
+    display: none;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.6rem;
+    gap: 0.3rem;
+}
+#search{
+    font-size: 0.8rem;
+    letter-spacing: normal;
+}

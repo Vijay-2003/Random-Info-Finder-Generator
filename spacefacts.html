@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPACE FACTS GENERATOR</title>
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/hamburgernav.css">
+    <link rel="stylesheet" href="CSS/factsgenerate.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+    <div class="logo" id="logo"><span>RANDOM </span>GENERATOR</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="factsmain.html" ><=BACK</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <!-- <li><a id="hov" href="#logout">LOGOUT</a></li> -->
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo" id="logo"><span>RANDOM </span>GENERATOR</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="factsmain.html" onclick="toggleMenu()"><=BACK</a></li>
+        <li><a href="about.html" onclick="toggleMenu()">ABOUT</a></li>
+        <!-- <li><a id="hov" href="#logout" onclick="toggleMenu()">LOGOUT</a></li> -->
+      </div>
+    </div>
+  </nav>
+
+    <div id="factbox">
+      <div class="facttitle">
+          <h2>Facts about <span>Space</span></h2>
+      </div>
+      <div class="factgenerator">
+          <h3>Random <span>Facts</span></h3>
+          <hr style="border-color: red; width: 100%;">
+          <h5 id="fact4text"><span>Facts</span> are Generated here</h5>
+      <hr style="border-color: red; width: 100%;">
+      <button id="fact4btn" >GENERATE</button>
+  </div>
+  </div>
+  
+<script src="javascript/script.js"></script>
+<script src="javascript/spacefacts.js"></script>
+</body>
+</html>

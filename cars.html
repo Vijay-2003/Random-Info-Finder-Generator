@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARS Info</title>
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/hamburgernav.css">
+    <link rel="stylesheet" href="CSS/factsgenerate.css">
+    <link rel="stylesheet" href="CSS/cars.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+    <div class="logo" id="logo"><span>RANDOM </span>GENERATOR</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="factsmain.html" ><=BACK</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <!-- <li><a id="hov" href="#logout">LOGOUT</a></li> -->
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo" id="logo"><span>RANDOM </span>GENERATOR</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="factsmain.html" onclick="toggleMenu()"><=BACK</a></li>
+        <li><a href="about.html" onclick="toggleMenu()">ABOUT</a></li>
+        <!-- <li><a id="hov" href="#logout" onclick="toggleMenu()">LOGOUT</a></li> -->
+      </div>
+    </div>
+  </nav>
+    <div id="factbox">
+        <div class="facttitle">
+            <h2>Cars <span> Info</span></h2>
+        </div>
+        <div class="factgenerator">
+            <!-- <h3>Random <span>Info</span></h3> -->
+            <hr style="border-color: red;width: 100%;">
+            <h5 id="generatetxt2">Drive : ____ </h5>
+            <h5 id="generatetxt4">Fuel Type : ____</h5>
+            <h5 id="generatetxt3">Cylinders : ____</h5>
+            <hr style="border-color: red;width:100%;">
+            <div id="form1">
+                <form class="form">
+                    <input type="text" id="find1" placeholder="Brand name">
+                    <input type="text" id="find2" placeholder="Model">
+                    <button type="button" id="search1">search</button>
+                </form> 
+            </div>
+            </div>
+    </div>
+    <script src="javascript/script.js"></script>
+    <script src="/javascript/cars.js"></script>
+</body>
+</html>

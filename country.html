@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Info</title>
+    <link rel="stylesheet" href="CSS/country.css">
+</head>
+<body>
+     <nav id="desktop-nav">
+        <div class="logo" id="logo"><span>RANDOM </span>GENERATOR</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="factsmain.html" ><=BACK</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <!-- <li><a id="hov" href="#logout">LOGOUT</a></li> -->
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo" id="logo"><span>RANDOM </span>GENERATOR</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="factsmain.html" onclick="toggleMenu()"><=BACK</a></li>
+            <li><a href="about.html" onclick="toggleMenu()">ABOUT</a></li>
+            <!-- <li><a id="hov" href="#logout" onclick="toggleMenu()">LOGOUT</a></li> -->
+          </div>
+        </div>
+      </nav> 
+
+    <div id="ca">
+        <div id="heading">
+            <h2>Country Info Web</h2>
+        </div>
+        <div id="intxt">
+        <input type="text" id="input" placeholder="Search a Country..">
+        <button type="submit" id="search">Search</button>
+        </div>
+        <div id="result">
+        </div>
+    </div>
+    <script src="javascript/script.js"></script>
+    <script src="javascript/country.js"></script>
+</body>
+</html>

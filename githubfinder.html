@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Finder</title>
+    <link rel="stylesheet" href="CSS/githubfinder.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/hamburgernav.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" id="logo" style="color: white;"><span>RANDOM </span>Generator</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="index.html" style="color: white;"><=HOME</a></li>
+            <li><a href="about.html" style="color: white;">ABOUT</a></li>
+            <!-- <li><a id="hov" href="#logout">LOGOUT</a></li> -->
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo" id="logo" style="color: white;"><span>RANDOM </span>GENERATOR</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span style="background-color: red;"></span>
+            <span style="background-color: red;"></span>
+            <span style="background-color: red;"></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="index.html" onclick="toggleMenu()"><=HOME</a></li>
+            <li><a href="about.html" onclick="toggleMenu()">ABOUT</a></li>
+            <!-- <li><a id="hov" href="#logout" onclick="toggleMenu()">LOGOUT</a></li> -->
+          </div>
+        </div>
+      </nav>
+
+    <div id="heading">
+    <h1>Github Finder</h1>
+    </div>
+    <div id="divinputs">
+        <input type="text" placeholder="enter username" id="input">
+        <button id="btn" type="submit">Search</button>
+        </div>
+    <section id="forms">
+    <div id="result">
+    </div>
+</section>
+</body>
+<script src="javascript/githubfinder.js"></script>
+<script src="javascript/script.js"></script>
+</html>

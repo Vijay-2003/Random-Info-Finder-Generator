@@ -1,0 +1,320 @@
+nav, .nav-links {
+    display: flex;
+  }
+  nav {
+    /* justify-content: space-around; */
+    justify-content:space-between;
+    border-style: inset;
+    border-top-style: none;
+    border-color: red;
+    margin: auto;
+    padding: 1rem;
+    align-items: center;
+    height: 9vh;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    animation-name: down;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-play-state: running;
+  }
+  @keyframes down{
+    from{transform: translateY(-7rem);}
+    25%{opacity: -3;}
+  }
+  nav,.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+  }
+  
+  a:hover {
+    color: red;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    /* text-decoration-color: rgb(181, 181, 181); */
+    text-decoration-color:black;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+  
+  .logo:hover {
+    cursor: default;
+  }
+  
+  /* HAMBURGER MENU */
+  
+  #hamburger-nav {
+    display: none;
+  }
+  
+  .hamburger-menu {
+    position: relative;
+    display:inline-block;
+    z-index: 1;
+  }
+  
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+  }
+  
+  .hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+  }
+  
+  .menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+  }
+  
+  .menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+  }
+  
+  .menu-links li {
+    list-style: none;
+  }
+  
+  .menu-links.open {
+    max-height: 300px;
+  }
+  #hov{
+      color: red;
+  }
+  @media screen and (max-width: 1200px) {
+      #desktop-nav {
+         display: none; 
+      } 
+      #appear{
+        display: none;
+      }
+      #hamburger-nav {
+        display: flex;
+      }
+  }
+  
+  /*country*/
+  
+  body{
+      background-color: yellow;
+      font-family: "Poppins", sans-serif;
+  }
+  html{
+      scroll-behavior: smooth;
+  }  
+  #heading{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  }
+  #ca{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      min-height: 20vh;
+      background-color: whitesmoke;
+      margin: auto;
+      margin-top: 5rem;
+      border-radius: 0.3rem;
+      outline: none;
+      border-style: none;
+      box-shadow: 0px 5px 7px black;
+  }
+  #intxt{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+  }
+  #intxt #input{
+      border-style: none;
+      border-bottom-style:inset ;
+      border-left-style:inset ;
+      border-color: black ;
+      outline: none;
+      padding: 0.2rem 2rem;
+      font-size: 1rem;
+      letter-spacing: 0.15rem;
+      border-radius: 0.2rem;
+      cursor: pointer;
+  }
+  #intxt #search{
+      padding: 0.2rem 1rem;
+      letter-spacing: 0.15rem;
+      border-radius: 0.2rem;
+      font-size: 1rem; 
+      cursor: pointer;;  
+  }
+  @media screen and (max-width:1200px){
+      #ca{
+          width: 95%;
+      }
+      #intxt #input{
+          width: 13rem;  
+      }
+      #intxt #search{
+          height: 1.8rem;
+          width: 6rem;
+      }
+  }
+  #size{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top:0.9rem;
+  }
+  #size img{
+      height: 30%;
+      width: 40%;
+  }
+  #ap{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+  }
+  
+  #Primary{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: auto;
+  }
+  #Primary #sp{
+      font-weight: bold;
+  }
+  #coatarm{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      /* border-left-style: inset;
+      border-width: 0.2rem;
+      border-color: black; */
+      padding: 1rem;
+  }
+  #Primary img{
+      height: 23%;
+      width: 33%;
+  }
+  #secondary{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* flex-wrap: wrap; */
+      text-align: center;
+  }
+  #secondary #sp{
+      font-weight: bold;
+  }
+  #maps{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      border-style: inset;
+      border-color: blue;
+      border-width: 0.1rem;
+      width: 50%;
+      margin: auto;
+      padding: 0.2rem;
+      margin-bottom: 1rem;
+      border-radius: 0.4rem;
+  }
+  #maps #maph{
+      font-weight: bold;
+      font-size: 1.2rem;
+  }
+  #maps2{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 0.2rem;
+      font-size: 1.1rem;
+  }
+  #maps2 a{
+      text-decoration: none;
+  }
+  @media screen and (max-width:400px){
+      #size img{
+          height: 40%;
+          width: 50%;
+      }
+      #mar{
+          margin-top: -3.5rem;
+      }
+      #Primary img{
+          height: 38%;
+          width: 48%;
+      }
+      #Primary{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding:1rem ;
+          gap: 2rem;
+      }
+      #coatarm{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          border-style: none;
+          border-top-style:inset ;
+          border-width: 0.2rem;
+          border-color: black;
+      }
+      #street{
+          margin-top: -2rem;
+          
+      }
+      #maps{
+          width: 80%;
+      }
+      #secondary{
+          font-size: 0.95rem;
+          word-spacing: 0.2rem;
+      }
+  }

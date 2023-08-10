@@ -1,0 +1,100 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+#inputs,button,input{
+    border-style: none;
+    outline: none;
+}
+#inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.4rem;
+    gap: 1rem;
+}
+input,button{
+    padding: 0.2rem;
+    width: 20%;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.4rem;
+}
+input{
+    border-color: blue;
+    border-width: 0.2rem;
+}
+#searchbox1{
+    border-bottom-style: outset;
+}
+#searchbox2{
+    border-bottom-style: outset;
+}
+#searchbox3{
+    border-bottom-style: outset;
+}
+h2{
+    text-align: center;
+    margin-top: 1rem;
+    color: white;
+}
+#h{
+    color: white;
+    font-weight: bold;
+}
+#result{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-style: none;
+    outline: none;
+    background-color: black;
+    margin: auto;
+    margin-top: 5rem;
+    width: 36%;
+    border-radius: 0.4rem;
+    box-shadow: 0px 4px 10px rgb(28, 28, 30);
+    padding: 0 0.1rem;
+    color: white;
+}
+button{
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-color: white;
+  border-radius: 0.5rem;
+  border-style: inset;
+}
+button:hover{
+    border-color: blue;
+}
+#result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:885px){
+    #inputs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.3rem;
+        margin-top: 1rem;
+    }
+    input,button{
+        width: 80%;
+        letter-spacing: 0.1rem;
+    }
+    #container{
+        min-width: 88%;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="application/json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marvel Characters Info</title>
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/hamburgernav.css">
+    <link rel="stylesheet" href="CSS/marvel.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" id="logo"><span>RANDOM </span>GENERATOR</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="factsmain.html" ><=BACK</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <!-- <li><a id="hov" href="#logout">LOGOUT</a></li> -->
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo" id="logo"><span>RANDOM </span>GENERATOR</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="factsmain.html" onclick="toggleMenu()"><=BACK</a></li>
+            <li><a href="about.html" onclick="toggleMenu()">ABOUT</a></li>
+            <!-- <li><a id="hov" href="#logout" onclick="toggleMenu()">LOGOUT</a></li> -->
+          </div>
+        </div>
+      </nav> 
+    <div id="marvelinfo">
+        <div id="marvelh">
+            <h2><span class='name'>Marvel Characters Info</span></h2>
+        </div>
+        <div id="marvelin">
+            <input type="text" value="" placeholder="Enter your favorite superhero's name here..." id="searchbox">
+            <button id="search" type="submit">Search</button>
+        </div>
+        <div id="result">
+        </div>
+    </div>
+    <script src="javascript/script.js"></script>
+    <script src="javascript/marvel.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+body{
+    font-family: "Poppins", sans-serif;
+    background: black;
+}
+#b{
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+#heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+    margin-top: 2.5rem;
+}
+#divinputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    gap: 1rem;
+}
+#btns{
+    position: relative;
+    top: -0.25rem;
+    background-color: black;
+}
+#btns a{
+    color: white;
+}
+#img-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 1rem;
+}
+#imgs{
+    height: 18rem;
+    width: 20rem;
+    box-shadow: 0 0 5px black,
+                0 0 25px black;
+    border-radius: 0.2rem;
+}
+#mains{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    gap: 0.5rem;
+}
+.errorh{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    text-align: center;
+}
+#input,#btn{
+    background: transparent;
+    color: blue; 
+    letter-spacing: 1px; 
+    border-radius: 0.2rem; 
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border: darkblue solid;
+    padding: 0.2rem; 
+} 
+a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+#btns{
+    /* background: black; */
+    border: none;
+    border-radius: 0.3rem;
+    padding: 5px 15px;
+}
+#btns a:hover{
+    color: blue;
+    text-decoration: none;
+}
+#result{
+    font-weight: 450;
+    letter-spacing: 1px;
+}
+@media screen and (max-width:1200px){
+    #forms{
+        min-width: 90%;
+    }
+    #imgs{
+        height: 15rem;
+        width: 16rem;
+    }
+    a{
+        text-decoration: none;
+        color: cyan;
+    }
+}
+@media screen and (min-width:1201px){
+    #btn{
+        height: 36px;
+        width: 80px;
+    }
+    #input{
+        height: 25px;
+    }
+    #imgs{
+        height: 290px;
+        width: 290px;
+        border-radius: 10px;
+        margin-top: 0.1rem;
+    }
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/hamburgernav.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+    <div class="logo" id="logo"><span>RANDOM </span>GENERATOR</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="index.html"><=HOME</a></li>
+        <li><a href="factsmain.html">RANDOM GENERATOR</a></li>
+        <li><a href="#footer">CONTACT</a></li>
+        <!-- <li><a id="hov" href="#logout">LOGOUT</a></li> -->
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo" id="logo"><span>RANDOM </span>GENERATOR</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="index.html" onclick="toggleMenu()"><=HOME</a></li>
+        <li><a href="factsmain.html" onclick="toggleMenu()">RANDOM GENERATOR</a></li>
+        <li><a href="#footer" onclick="toggleMenu()">CONTACT</a></li>
+        <!-- <li><a id="hov" href="#logout" onclick="toggleMenu()">LOGOUT</a></li> -->
+      </div>
+    </div>
+  </nav>
+  <section id="about">
+    <div class="aboutweb">
+        <h2>ABOUT WEBSITE</h2>
+    </div>
+    <div class="aboutwebp">
+        <p>This Website will give you<span> Random Facts/Info/Any</span>. In simple words this website will generate <span>Random Info/Facts/Any</span> for you about a selected content given in the website. </p>
+    </div>
+  </section>
+  <section id="developer">
+    <div class="aboutdev">
+        <h2>DEVELOPER</h2>
+    </div>
+    <div class="aboutdevp">
+        <p><span>Name :</span> Vijay Digambar Kusekar</p>
+        <p id="fordownmargin"><span>Age :</span> 20 years</p>
+    </div>
+  </section>
+
+
+  <!-- <hr style="border-color: grey;width: 95%; margin: auto;"> -->
+  <section id="footer">
+    <div class="linktitle">Social Links</div>
+    <div id="socials-container">
+        <a id="flink" href="https://www.linkedin.com/in/vijay-digambar-kusekar-682235259" target="window2">
+          <i class="fa-brands fa-linkedin" style="color: blue;"></i>
+      </a>
+      <a id="flink" href="https://github.com/Vijay-2003" target="window2">
+          <i class="fa-brands fa-github" style="color: #00060f;"></i>
+      </a>
+      <a id="flink" href="https://instagram.com/vijay_kusekar?igshid=MzNINGNkZWQ4Mg==" target="window2">
+          <i class="fa-brands fa-instagram" style="color: #c91891;"></i>
+      </a>
+      <a id="flink" href="https://www.facebook.com/profile.php?id=100069505254213" target="window2">
+          <i class="fa-brands fa-facebook" style="color: #0962fb;"></i>
+      </a>
+      </div>
+  </section>
+  <footer id="footer">
+    <div>
+        <ul class="foot-links">
+          <li><a id="factmargin" href="factsmain.html">INDEX</a></li>
+          <li><a id="disappear" href="#hamburger-nav">HOME</a></li>
+          <li><a id="appear" href="#desktop-nav">HOME</a></li>
+          <!-- <li><a id="hov" href="#logout">LOGOUT</a></li> -->
+        </ul>
+      </div>
+    <p>Copyright &#169; 2023 Vijay Kusekar. All Rights Reserved.</p>
+  </footer>
+
+  <style>
+    #about, #developer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 4rem;
+        width: 80%;
+        border-top-style: inset;
+        border-width: 0.1rem;
+        border-color: red;
+    }
+    section h2{
+        font-size: 1.8rem;
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+        margin-top: 1rem;
+    }
+    .aboutwebp p, .aboutdevp p{
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+    #developer{
+        border-bottom-style: inset;
+        border-width: 0.1rem;
+        border-color: red;
+    }
+    .aboutdev h2{
+        margin-top: 1rem;
+    }
+    .aboutdevp #fordownmargin{
+        margin-bottom: 1rem;
+    }
+    @media screen and (max-width:1200px) {
+        .aboutwebp p, .aboutdevp p{
+            text-align: center;
+            font-size: 1.2rem;
+            margin-top: 2rem;
+        }
+        section h2{
+            font-size: 1.4rem;
+        }
+        #disappear{
+            margin-left: 1.5rem;
+        }
+    }
+    @media screen and (min-width:301px) {
+        #disappear{
+            margin-left: 2rem;
+        }
+    }
+    @media screen and (min-width:257px) {
+        #disappear{
+            margin-left: 4rem;
+        }
+    }
+    @media screen and (max-width:400px) {
+        #disappear{
+            margin-right: 1rem;
+        }
+    }
+    @media screen and (max-width:348.5px) {
+        #factmargin{
+            position: relative;
+            left: 3rem;
+        }
+    }
+    @media screen and (min-width:1201px) {
+        #disappear{
+            display: none;
+        }
+        #appear{
+            margin-left: -1.5rem;
+        }
+    }
+
+  </style>
+<script src="javascript/script.js"></script>
+<script src="https://kit.fontawesome.com/6a7fb8c661.js" crossorigin="anonymous"></script>
+</body>
+</html>

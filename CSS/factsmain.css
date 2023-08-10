@@ -1,0 +1,97 @@
+body{
+    margin-bottom: 10rem;
+  }
+  #factindex{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 20%;
+      border-style: inset;
+      border-color: red;
+      border-width: 0.1rem;
+      margin: auto;
+      padding: 1rem;
+      border-radius: 1rem;
+      position: relative;
+      top:4rem;
+      animation-name:lefts;
+      animation-timing-function: ease-in-out;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+      animation-play-state: running;
+  }
+  @keyframes lefts {
+    from{transform: translateX(-200%);}
+    30%{opacity: -1;}
+  }
+  .factindex1{
+    display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 20%;
+      border-style: inset;
+      border-color: red;
+      border-width: 0.1rem;
+      margin: auto;
+      padding: 1rem;
+      border-radius: 1rem;
+      position: relative;
+      top:4rem;
+      animation-name:rights;
+      animation-timing-function: ease-in-out;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+      animation-play-state: running;
+  }
+  @keyframes rights {
+    from{transform: translateX(200%);}
+    30%{opacity:-1;}
+  }
+  #factindex a, .factindex1 a{
+    text-decoration: none;
+    font-size: 1.5rem;  
+  }
+  @media screen and (max-width:1200px) {
+      #factindex a{
+          text-align: center;
+          font-size: 1.3rem;
+          font-weight: bold;
+      }
+      #factindex{
+          width: 65%;
+          padding: 0.9rem;
+      }
+      .factindex1 a{
+        text-align: center;
+          font-size: 1.3rem;
+          font-weight: bold;
+      }
+      .factindex1{
+          width: 65%;
+          padding: 0.9rem;
+      }
+  }
+  @media screen and (min-width:1201px){
+      #factindex{
+        animation-name:lefts;
+        animation-timing-function: ease-in-out;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-play-state: running;
+      }
+      @keyframes lefts {
+        from{opacity: -4;}
+      }
+      .factindex1{
+        animation-name:rights;
+        animation-timing-function: ease-in-out;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-play-state: running;
+      }
+      @keyframes rights {
+        from{opacity:-4;}
+      }
+}

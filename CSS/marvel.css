@@ -1,0 +1,62 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+.name{
+    color: black;
+}
+#marvelinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 4rem;
+    border-style: none;
+    background-color: red;
+    outline: none;
+    padding: 1.2rem;
+    border-radius: 0.4rem;
+    box-shadow: 1px 5px 6px black;
+    width: 50%;
+}
+#marvelh{
+    text-align: center;
+}
+#marvelin{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 1rem;
+}
+#searchbox, #search{
+    padding: 0.2rem 0.7rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+}
+#searchbox, #search{
+    outline: none;
+    border-style: none;
+    border-left-style: double;
+    border-bottom-style:double;
+    border-color: black;
+    border-width: 0.3rem;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+#result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 1rem;
+    padding: 1rem 0.2rem;
+}
+@media screen and (max-width:1200px){
+    #marvelinfo{
+        width: 85%;
+    }
+}

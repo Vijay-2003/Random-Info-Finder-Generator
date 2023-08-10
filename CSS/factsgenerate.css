@@ -1,0 +1,67 @@
+#factbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: outset;
+    border-color: black;
+    border-width: 0.3rem;
+    width: 80%;
+    margin: auto;
+    margin-top: 2.6rem;
+    padding: 1rem;
+    min-height: 20vh;
+    border-radius: 2rem;
+}
+.factgenerator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.factgenerator h3 , .factgenerator button{
+    margin-top: 1rem;
+}
+.factgenerator h5{
+    padding: 2rem;
+    word-spacing: 0.2rem;
+    /* letter-spacing: 0.1rem; */
+    font-size: 1.20rem;
+}
+.factgenerator button{
+    padding: 0.5rem;
+    border-radius: 1.4rem;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    font-weight: bold;
+    /* font-size: 0.9rem; */
+}
+button:hover{
+    background-image: linear-gradient(to top,grey,white);
+    color: black;
+    font-weight: bolder;
+}
+@media screen and (max-width:1200px) {
+    .factgenerator h5{
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:258px) {
+    .facttitle h2{
+        text-align: center;
+    }
+    .factgenerator button{
+        padding: 0.3rem;
+        text-align: center;
+    }
+}
+#factbox{
+    width: 45%;
+}
+@media  screen and (max-width:1200px) {
+    #factbox{
+    width: 78%;
+}
+}

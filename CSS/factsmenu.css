@@ -1,0 +1,36 @@
+#factsmenu{
+    border-style: inset;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-color: black;
+}
+#factsmenu h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 0.9rem;
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    color: red;
+}
+#factsmenu p{
+    font-size: .99em;
+    text-align: center;
+    line-height: normal;
+    margin-bottom: 1rem;
+    color: black;
+}
+@media screen and (min-width:1200px){
+    #factsmenu p{
+        font-size: 1.2rem;
+    }
+}
